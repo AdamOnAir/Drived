@@ -18,8 +18,10 @@ global loader                   ; the entry symbol for ELF
 
     KERNEL_STACK_SIZE equ 4096                  ; size of stack in bytes
     mov esp, kernel_stack + KERNEL_STACK_SIZE   ; point esp to the start of the
-                                                ; stack (end of memory area)
-    ; The assembly code
+                                                ; stack (end of memory area)   
+
+
+    ; SUM OF THREE
     extern sum_of_three   ; the function sum_of_three is defined elsewhere
 
     push dword 3            ; arg3
