@@ -27,7 +27,7 @@ global loader                   ; the entry symbol for ELF
                                                 ; stack (end of memory area)
 
   ; The assembly code
-    external sum_of_three   ; the function sum_of_three is defined elsewhere
+    extern sum_of_three   ; the function sum_of_three is defined elsewhere
 
     push dword 3            ; arg3
     push dword 2            ; arg2
