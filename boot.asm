@@ -1,3 +1,5 @@
+; Copyright (C) 2024 Adam Ellouze
+
 bits 16
 org 0x7c00
 
@@ -10,7 +12,9 @@ print:
   add si, 1
   cmp [hello + si], 0
   jne print
-  
+
+jmp $
+
 hello:
   db "Hello X86", 0
 
