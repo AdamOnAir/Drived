@@ -1,3 +1,5 @@
+; Copyright (C) 2024 Adam Ellouze
+
 org 0x7c00
 bits 16
 
