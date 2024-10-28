@@ -10,7 +10,7 @@ print:
   mov al, [hello + si]
   int 0x10
   add si, 1
-  cmp [hello + si], 0
+  cmp byte hello + si], 0
   jne print
 
 jmp $
