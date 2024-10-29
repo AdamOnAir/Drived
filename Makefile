@@ -1,9 +1,7 @@
-# Copyright (C) 2024 Adam Ellouze
-
-AS = nasm
-
 all:
-	$(AS) -o boot boot.asm
+	nasm -o boot boot.asm
+run:
+	qemu-system-i386 boot
+
 clean:
-	rm -rf *.o *.elf *.iso
-	rm kernel bootloader
+	rm boot
